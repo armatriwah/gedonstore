@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Gedonpedia - Define Your Future</title>
+    <meta name="keywords" content="" />
+
+    <!-- Font Awesome if you need it
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+	-->
+    <link href="favicon.webp" rel="icon" type="image/x-icon" />
+    <meta name="description" content="" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <!--Replace with your tailwind.css once created-->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Animation CSS-->
+    <style>
+      .slide-in-bottom {
+        -webkit-animation: slide-in-bottom 0.5s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          both;
+      }
+      .slide-in-bottom-h1 {
+        -webkit-animation: slide-in-bottom 0.5s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.5s both;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          0.5s both;
+      }
+      .slide-in-bottom-subtitle {
+        -webkit-animation: slide-in-bottom 0.5s
+          cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.75s both;
+        animation: slide-in-bottom 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+          0.75s both;
+      }
+      .fade-in {
+        -webkit-animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s
+          both;
+        animation: fade-in 1.2s cubic-bezier(0.39, 0.575, 0.565, 1) 1s both;
+      }
+      .bounce-top-icons {
+        -webkit-animation: bounce-top 0.9s 1s both;
+        animation: bounce-top 0.9s 1s both;
+      }
+
+      @-webkit-keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(1000px);
+          transform: translateY(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slide-in-bottom {
+        0% {
+          -webkit-transform: translateY(1000px);
+          transform: translateY(1000px);
+          opacity: 0;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes bounce-top {
+        0% {
+          -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          opacity: 1;
+        }
+        24% {
+          opacity: 1;
+        }
+        40% {
+          -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        65% {
+          -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        82% {
+          -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        93% {
+          -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        25%,
+        55%,
+        75%,
+        87% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          opacity: 1;
+        }
+      }
+      @keyframes bounce-top {
+        0% {
+          -webkit-transform: translateY(-45px);
+          transform: translateY(-45px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+          opacity: 1;
+        }
+        24% {
+          opacity: 1;
+        }
+        40% {
+          -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        65% {
+          -webkit-transform: translateY(-12px);
+          transform: translateY(-12px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        82% {
+          -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        93% {
+          -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+          -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+        }
+        25%,
+        55%,
+        75%,
+        87% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+        }
+        100% {
+          -webkit-transform: translateY(0);
+          transform: translateY(0);
+          -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+          opacity: 1;
+        }
+      }
+      @-webkit-keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+      @keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body
+    class="leading-normal tracking-normal text-gray-900"
+    style="font-family: 'Source Sans Pro', sans-serif"
+  >
+    <div
+      class="h-screen pb-14 bg-right bg-cover"
+      style="background-image: url('bg.svg')"
+    >
+      <!--Nav-->
+      <div class="w-full container mx-auto p-6">
+        <div class="w-full flex items-center justify-between">
+          <a
+            class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            <img src="logo.png" width="25%" /> Gedonpedia
+          </a>
+
+          <div class="flex w-1/2 justify-end content-center">
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+              data-tippy-content="Github"
+              href="https://github.com/"
+            >
+              <svg
+                class="fill-current h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M15,3C8.373,3,3,8.373,3,15c0,5.623,3.872,10.328,9.092,11.63C12.036,26.468,12,26.28,12,26.047v-2.051 c-0.487,0-1.303,0-1.508,0c-0.821,0-1.551-0.353-1.905-1.009c-0.393-0.729-0.461-1.844-1.435-2.526 c-0.289-0.227-0.069-0.486,0.264-0.451c0.615,0.174,1.125,0.596,1.605,1.222c0.478,0.627,0.703,0.769,1.596,0.769 c0.433,0,1.081-0.025,1.691-0.121c0.328-0.833,0.895-1.6,1.588-1.962c-3.996-0.411-5.903-2.399-5.903-5.098 c0-1.162,0.495-2.286,1.336-3.233C9.053,10.647,8.706,8.73,9.435,8c1.798,0,2.885,1.166,3.146,1.481C13.477,9.174,14.461,9,15.495,9 c1.036,0,2.024,0.174,2.922,0.483C18.675,9.17,19.763,8,21.565,8c0.732,0.731,0.381,2.656,0.102,3.594 c0.836,0.945,1.328,2.066,1.328,3.226c0,2.697-1.904,4.684-5.894,5.097C18.199,20.49,19,22.1,19,23.313v2.734 c0,0.104-0.023,0.179-0.035,0.268C23.641,24.676,27,20.236,27,15C27,8.373,21.627,3,15,3z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+              data-tippy-content="Instagram"
+              href="https://www.instagram.com/?hl=id"
+            >
+              <svg
+                class="fill-current h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M 9.9980469 3 C 6.1390469 3 3 6.1419531 3 10.001953 L 3 20.001953 C 3 23.860953 6.1419531 27 10.001953 27 L 20.001953 27 C 23.860953 27 27 23.858047 27 19.998047 L 27 9.9980469 C 27 6.1390469 23.858047 3 19.998047 3 L 9.9980469 3 z M 22 7 C 22.552 7 23 7.448 23 8 C 23 8.552 22.552 9 22 9 C 21.448 9 21 8.552 21 8 C 21 7.448 21.448 7 22 7 z M 15 9 C 18.309 9 21 11.691 21 15 C 21 18.309 18.309 21 15 21 C 11.691 21 9 18.309 9 15 C 9 11.691 11.691 9 15 9 z M 15 11 A 4 4 0 0 0 11 15 A 4 4 0 0 0 15 19 A 4 4 0 0 0 19 15 A 4 4 0 0 0 15 11 z"
+                />
+              </svg>
+            </a>
+
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+              data-tippy-content="Twitter"
+              href="https://twitter.com/"
+            >
+              <svg
+                class="fill-current h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M30.063 7.313c-.813 1.125-1.75 2.125-2.875 2.938v.75c0 1.563-.188 3.125-.688 4.625a15.088 15.088 0 0 1-2.063 4.438c-.875 1.438-2 2.688-3.25 3.813a15.015 15.015 0 0 1-4.625 2.563c-1.813.688-3.75 1-5.75 1-3.25 0-6.188-.875-8.875-2.625.438.063.875.125 1.375.125 2.688 0 5.063-.875 7.188-2.5-1.25 0-2.375-.375-3.375-1.125s-1.688-1.688-2.063-2.875c.438.063.813.125 1.125.125.5 0 1-.063 1.5-.25-1.313-.25-2.438-.938-3.313-1.938a5.673 5.673 0 0 1-1.313-3.688v-.063c.813.438 1.688.688 2.625.688a5.228 5.228 0 0 1-1.875-2c-.5-.875-.688-1.813-.688-2.75 0-1.063.25-2.063.75-2.938 1.438 1.75 3.188 3.188 5.25 4.25s4.313 1.688 6.688 1.813a5.579 5.579 0 0 1 1.5-5.438c1.125-1.125 2.5-1.688 4.125-1.688s3.063.625 4.188 1.813a11.48 11.48 0 0 0 3.688-1.375c-.438 1.375-1.313 2.438-2.563 3.188 1.125-.125 2.188-.438 3.313-.875z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="inline-block text-blue-300 no-underline hover:text-indigo-800 hover:text-underline text-center h-10 p-2 md:h-auto md:p-4"
+              data-tippy-content="Facebook"
+              href="https://web.facebook.com/?_rdc=1&_rdr"
+            >
+              <svg
+                class="fill-current h-6"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!--Main-->
+      <div
+        class="container pt-24 md:pt-48 px-6 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!--Left Col-->
+        <div
+          class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden"
+        >
+          <h1
+            class="my-4 text-3xl md:text-5xl text-purple-800 font-bold leading-tight text-center md:text-left slide-in-bottom-h1"
+          >
+		  Digital Talent Scholarship Vocational School Graduate Academy
+          </h1>
+          <p
+            class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left slide-in-bottom-subtitle"
+          >
+            Junior Web Developer - Arma Tri Wahyudi
+          </p>
+
+          <p
+            class="text-blue-400 font-bold pb-8 lg:pb-6 text-center md:text-left fade-in"
+          >
+            Dashboard Admin (URL/admin)<br>Username: admin | Password: admin
+          </p>
+          <div
+            class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in"
+          >
+            <a href="https://pelatihan-arma.000webhostapp.com/" target="_blank"><img src="1.png" class="h-12 bounce-top-icons" /></a>
+            <a href="https://project-arma.000webhostapp.com/" target="_blank"><img src="2.png" class="h-12 bounce-top-icons" /></a>
+			<a href="https://gedonstore.000webhostapp.com/" target="_blank"><img src="3.png" class="h-12 bounce-top-icons" /></a>
+          </div>
+        </div>
+
+        <!--Right Col-->
+        <div class="w-full xl:w-3/5 py-6 overflow-y-hidden">
+          <img
+            class="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
+            src="devices.svg"
+          />
+        </div>
+
+        <!--Footer-->
+        <div class="w-full pt-16 pb-6 text-sm text-center md:text-left fade-in">
+          <a class="text-gray-500 no-underline hover:no-underline" href="#"
+            >&copy; Gedonpedia 2023</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <!-- jQuery if you need it
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  --></body>
+</html>
